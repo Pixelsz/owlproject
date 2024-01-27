@@ -1,8 +1,14 @@
 import { useState } from 'react'
+import './App.css'
+import LoginSignup from './components/LoginSignup/loginsignup.jsx';
 
-const App = () => {
-  return <div>App React</div>;
-};
+function App() {
+  return(
+  <>
+  <LoginSignup />
+  </>
+  );
+}
 
 
 
