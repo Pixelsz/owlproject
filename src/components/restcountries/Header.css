@@ -1,0 +1,24 @@
+header.light-theme {
+  background-color: var(--light-mode-background);
+  color: var(--light-mode-text);
+}
+
+.header {
+  background-color: hsl(209, 23%, 22%);
+  color: var(--text-color);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.6em;
+}
+
+.fa-moon {
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .header {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,72 @@
+.filter {
+  background-color: var(--dark-bg-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.filter .form-control {
+  width: 100%;
+}
+
+.filter .form-control input {
+  background-color: #2b3743;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  width: 100%;
+  margin: 0 0 30px;
+}
+
+.filter.light-theme {
+  background-color: var(--light-mode-background);
+}
+
+.filter input.light-theme {
+  background-color: var(--light-mode-input);
+}
+
+.filter .form-control input::placeholder {
+  color: #fff;
+}
+
+.filter .region-filter {
+  width: auto;
+}
+
+.filter .region-filter .select {
+  background-color: #2b3743;
+  color: #fff;
+  font-family: inherit;
+  padding: 12px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+}
+
+.filter .region-filter .select.light-theme {
+  background-color: var(--light-mode-input);
+}
+
+@media (min-width: 768px) {
+  .filter {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .filter .form-control {
+    width: auto;
+  }
+
+  .filter .form-control input {
+    width: auto;
+    margin: 0;
+  }
+}

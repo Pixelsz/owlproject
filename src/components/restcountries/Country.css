@@ -1,0 +1,141 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.btn {
+  background-color: var(--dark-bg-color);
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid var(--dark-bg-color);
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: var(--dark-bg-color);
+}
+
+.btn-light {
+  background-color: var(--article-color);
+  border: 2px solid var(--article-color);
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.btn-passagem {
+  display: flex;
+  font-size: 2em;
+  font-weight: 700;
+  display: block;
+  background-color: var(--article-color);
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid var(--dark-bg-color);
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  margin-top: 30px;
+  border: 1px solid var(--text-color);
+  text-align: center;
+}
+
+.btn-passagem:hover {
+  background-color: #fff;
+  color: var(--dark-bg-color);
+}
+
+.country {
+  padding: 30px;
+  color: var(--text-color);
+}
+
+.country-details h5,
+h2,
+h3 {
+  margin: 0px;
+}
+
+.country-details.light-theme {
+  color: var(--light-mode-text);
+}
+
+.country article .country-details div {
+  margin: 30px 0;
+}
+
+.country article .country-details div h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.country article .country-details div h5 {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.country article .country-details div h5 span {
+  font-weight: 300;
+}
+
+.country article h3 {
+  font-weight: 600;
+}
+
+.country article .borders {
+  display: flex;
+}
+
+.country article .borders ul {
+  margin: 0 10px;
+}
+
+.country article .borders ul {
+  margin: 10px;
+  background-color: var(--article-color);
+  padding: 3px 15px;
+  border-radius: 3px;
+  box-shadow: 0 5px 20px hsla(200, 15%, 8%, 0.5);
+}
+
+li {
+  list-style: none;
+}
+
+@media (min-width: 992px) {
+  .country article .country-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+  }
+  .country .country-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .country {
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .country {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .country {
+    max-width: 1400px;
+  }
+}
