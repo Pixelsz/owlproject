@@ -12,6 +12,9 @@ const LoginSignup = () => {
   return (
     <div className="loginpage">
     <div className='container'>
+    <div>
+                <i className='fas fa-moon' onClick={() => changeTheme()}>Modo Escuro</i>
+  </div>
         <div className="header-login">
             <div className="text">{action}</div>
             <div className="underline"></div>
